@@ -1,0 +1,192 @@
+.disconnect {
+  display: flex;
+  padding: 10px 0px;
+  width: 200px;
+  flex-direction: column;
+  border-radius: 20px;
+  border: "none";
+  border-radius: 10px;
+
+  background: linear-gradient(92deg, #1e1e1e 0.87%, #1c1b1b 98.92%);
+}
+.disconnectmain {
+  right: 45px;
+  position: absolute;
+
+  top: 60px;
+  padding: 30px 0px;
+  width: 200px;
+}
+.connectwallet:hover {
+  opacity: 0.5;
+}
+.connectwallet {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: 0.5px solid #ab00ff;
+  background: linear-gradient(92deg, #1e1e1e 0.87%, #1c1b1b 98.92%);
+  width: 100%;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: transparent;
+}
+.connectwallet::after {
+  content: "Connect Wallet";
+  position: absolute;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.networkoption:hover {
+  opacity: 0.5;
+}
+.ChainDropdownMain {
+  position: absolute;
+  top: 60px;
+  cursor: pointer;
+  padding: 30px 0px;
+  width: 200px;
+}
+.connectchain:hover {
+  opacity: 0.5;
+}
+.connectchain {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 15px 30px;
+  border-radius: 20px;
+  border: 0.5px solid #ab00ff;
+  background: linear-gradient(92deg, #1e1e1e 0.87%, #1c1b1b 98.92%);
+  width: 200px;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: transparent;
+  line-height: none !important;
+}
+.connectchain span {
+  content: "";
+  /* position: absolute; */
+  top: 50%;
+  cursor: pointer;
+  left: 50%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.connectaccount:hover {
+  opacity: 0.5;
+}
+.connectaccount {
+  /* position: relative; */
+  /* overflow: hidden; */
+  z-index: 1;
+  padding: 7px 30px;
+  border-radius: 20px;
+  border: 0.5px solid #ab00ff;
+  background: linear-gradient(92deg, #1e1e1e 0.87%, #1c1b1b 98.92%);
+  width: 200px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.connectaccount span {
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .connectchain {
+    width: 150px;
+    font-size: 12px;
+    padding: 16px 10px;
+  }
+  .connectaccount {
+    width: 150px;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .connectchain span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .connectchain {
+    /* visibility: hidden; */
+    width: 105px !important ;
+    font-size: 10px !important;
+    padding: 10px 0px !important;
+  }
+
+  .connectchain span {
+    font-size: 10px !important;
+  }
+
+  .connectaccount {
+    width: 112px;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .connectwallet {
+    padding: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .connectwallet {
+    font-size: 12px;
+    /* padding: 7px 23px; */
+  }
+  .ChainDropdownMain {
+    right: 30px;
+  }
+  .CMain {
+    position: relative;
+    left: -7px;
+  }
+  .connectaccount span {
+    width: 100px;
+    font-size: 10px;
+    padding: 4px 3px;
+  }
+  .connectchain span {
+    width: 70px;
+    font-size: 10px;
+  }
+  .connectchain {
+    display: none;
+  }
+  .connectaccount {
+    width: 125px !important;
+    font-size: 8px;
+    line-height: 10px !important;
+    border-radius: 15px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .connectaccount {
+    width: 120px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .connectaccount {
+    width: 90px !important;
+  }
+}
